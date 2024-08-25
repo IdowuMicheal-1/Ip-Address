@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 import { LocationMarker } from './LocationMarker';
 
@@ -17,7 +17,7 @@ export function ExternalStateExample({ lat, lng }) {
 
   return (
     <MapContainer
-      center={[lat || 51.505, lng || -0.09]} // Default center
+      center={[lat || 51.505, lng || -0.09]}
       zoom={13}
       scrollWheelZoom={false}
       ref={mapRef}
